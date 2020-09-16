@@ -103,7 +103,7 @@ public class Recipe {
 
         stringBuilder.append("\nSteps:\n\n");
 
-        List<String> stepsList = Arrays.asList(this.steps);
+        List<String> stepsList = Arrays.asList(steps);
         stepsList.forEach((i) -> stringBuilder.append("\t" + (stepsList.indexOf(i) + 1) + ". " + i + "\n"));
 
         return stringBuilder.toString();

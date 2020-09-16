@@ -19,7 +19,21 @@ public class App {
             "top eggs with your cheese and tomato, close sandwich with other piece of toast, cut in half, and enjoy",
         };
         Recipe recipe = new Recipe(name, ingredients, steps, description);
-        System.out.println(recipe.toString());
+
+        String name2 = "Reheat pizza";
+        String[] ingredients2 = {
+            "pizza from fridge"
+        };
+        String[] steps2 = {
+            "preheat oven to 350F",
+            "place pizza directly on rack",
+            "bake for about 10 minutes or until warm and cheese is melted"
+        };
+
+        Recipe recipe2 = new Recipe(name2, ingredients2, steps2);
+
+        System.out.printf("Recipe 1: %s%n", recipe);
+        System.out.printf("Recipe 2: %s%n", recipe2);
 
     }
 }
